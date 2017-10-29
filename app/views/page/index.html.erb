@@ -1,0 +1,183 @@
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#right-app-navbar-collapse" aria-expanded="false">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#home" class="navbar-brand page-scroll">Maulana Haikal</a>
+		</div>
+		<div class="collapse navbar-collapse" id="right-app-navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#about" class="page-scroll">About</a>
+				</li>
+				<li>
+					<a href="#portfolio" class="page-scroll">Portfolio</a>
+				</li>
+				<li>
+					<a href="#contact" class="page-scroll">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- End Of Navbar -->
+
+<!-- Jumbotron -->
+<div class="jumbotron text-center">
+	<%= image_tag("profile.jpg", alt: "profile pic", class: "img-circle")%>
+	<h1>Maulana Haikal</h1>
+	<p>BBoy | Web Developer</p>
+</div>
+<!-- End of Jumbotron -->
+
+<!-- About -->
+<section id="about" class="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="text-center">About</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-5 col-sm-offset-1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, laudantium molestiae magni. Incidunt aspernatur labore sint blanditiis adipisci, nam consectetur a quam eveniet, odit voluptas perferendis, et minima quod tempora!</p>
+			</div>
+			<div class="col-sm-5">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit praesentium, perferendis nostrum aliquam repellat ratione ad. Dolores distinctio, accusantium impedit nemo, minima libero omnis, consectetur consequatur aliquid excepturi asperiores, id!</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End of About -->
+
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h2>Portfolio</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<%= link_to '#', class: "thumbnail" do %>
+					<%= image_tag("portfolio.png", alt: "portfolio image")%>
+				<% end %>
+			</div>
+			<div class="col-sm-4">
+				<%= link_to '#', class: "thumbnail" do %>
+					<%= image_tag("portfolio2.jpg", alt: "portfolio image")%>
+				<% end %>
+			</div>
+			<div class="col-sm-4">
+				<%= link_to '#', class: "thumbnail" do %>
+					<%= image_tag("portfolio.png", alt: "portfolio image")%>
+				<% end %>
+			</div>
+			<div class="col-sm-4">
+				<%= link_to '#', class: "thumbnail" do %>
+					<%= image_tag("portfolio2.jpg", alt: "portfolio image")%>
+				<% end %>
+			</div>
+			<div class="col-sm-4">
+				<%= link_to '#', class: "thumbnail" do %>
+					<%= image_tag("portfolio.png", alt: "portfolio image")%>
+				<% end %>
+			</div>
+			<div class="col-sm-4">
+				<%= link_to '#', class: "thumbnail" do %>
+					<%= image_tag("portfolio2.jpg", alt: "portfolio image")%>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End of Portfolio -->
+
+<!-- Contact -->
+<section id="contact" class="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h2>Contact</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<form>
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input id="name" type="text" class="form-control" placeholder="Input name">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input id="email" type="email" class="form-control" placeholder="Input email">
+					</div>
+					<div class="form-group">
+						<label for="telepon">Telp</label>
+						<input id="telp" type="tel" class="form-control" placeholder="Input Telephone Number">
+					</div>
+					<select name="" id="" class="form-control">
+						<option>-- Choose Category --</option>
+						<option>Web Design</option>
+						<option>Web Development</option>
+						<option>BBoy Move</option>
+					</select>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea class="form-control" rows="10"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Send</button>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End of Contact -->
+
+<!-- Footer -->
+<footer>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-sm-12">
+				<p>&copy; 2017 | built by <i class="glyphicon glyphicon-star"></i> <a href="google.com">Maulana Haikal</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<a href="www.google.com" class="btn btn-danger"><i class="glyphicon glyphicon-play"></i>  Subscribe to youtube</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End of Footer  -->
+<script type="text/javascript">
+// Event pada saat klik link
+	$('.page-scroll').on('click', function(e){
+		// Ambil isi href
+		var tujuan = $(this).attr('href');
+		// console.log(tujuan);
+		// Tangkap elemen ybs
+		var elemenTujuan = $(tujuan);
+		// console.log(elemenTujuan.offset().top);
+		// console.log($('body').scrollTop());
+		// pindahkan scroll
+		// $('body').scrollTop(elemenTujuan.offset().top);
+		$('body').animate({
+			scrollTop: elemenTujuan.offset().top - 50
+		}, 1250, 'swing');
+		// console.log('ok');
+		// alert('Hey Foo!');
+
+		e.preventDefault();
+	});
+</script>

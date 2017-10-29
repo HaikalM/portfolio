@@ -1,7 +1,6 @@
-@import "bootstrap-sprockets"
-@import "bootstrap"
-
-@import "parallax"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "parallax";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -17,3 +16,50 @@
  *= require_tree .
  *= require_self
  */
+
+ html{
+	position: relative;
+ }
+
+ body{
+ 	margin-bottom: 120px;
+ 	margin-top: 30px;
+ }
+
+.jumbotron img{
+	width: 200px;
+	border: 5px solid #666;
+}
+
+hr{
+	width: 250px;
+	border-top: 3px solid #999;
+}
+
+section{
+	min-height: 600px;
+}
+
+.portfolio{
+	background-color: #eee;
+}
+
+.contact{
+	min-height: 800px;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+	background-color: #333;
+	padding-top: 30px;
+	p{
+		color: #aaa;
+		font-size: 0.9em;
+	}
+	i{
+		color: salmon;
+	}
+}

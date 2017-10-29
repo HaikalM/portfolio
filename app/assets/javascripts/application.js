@@ -14,6 +14,12 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap-sprockets
-//= require turbolinks
-//= require bootstrap-sprockets
-//= require_tree .
+//= require bootstrap.min
+// require_self
+// require turbolinks
+//= require_tree 
+
+// $(document).ready(function(){
+// 		// console.log('ok');
+// 		alert('tes javascript');
+// 	});
