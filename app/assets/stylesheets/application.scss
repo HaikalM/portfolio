@@ -26,10 +26,22 @@
  	margin-top: 30px;
  }
 
-.jumbotron img{
-	width: 200px;
-	border: 5px solid #666;
-}
+ // .jumbotron{
+ // 	height: 400px;
+ // 	background-image: url(/assets/header-bg.jpg);
+ // 	background-attachment: fixed;
+ // 	background-size: cover;
+ // 	background-position: 0 -100px;
+ // 	color: #eaeaea;
+ // 	h1,p{
+ // 		text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+ // 	}
+ // 	img{
+	// 	width: 200px;
+	// 	border: 5px solid #eaeaea;
+	// 	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	// }
+ // }
 
 hr{
 	width: 250px;
@@ -37,9 +49,11 @@ hr{
 }
 
 section{
-	min-height: 600px;
+	min-height: 400px;
 }
-
+.about{
+	min-height: 400px;
+}
 .portfolio{
 	background-color: #eee;
 }

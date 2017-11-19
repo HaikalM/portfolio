@@ -1,0 +1,43 @@
+.jumbotron {
+	height: 400px;
+	background-image: url(/assets/header-bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -100px;
+	color: #eaeaea;
+	overflow: hidden;
+	h1, p{
+		text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	}
+	img{
+		width: 200px;
+		border: 5px solid #eaeaea;
+		box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	}
+}
+
+.portfolio .thumbnail{
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.portfolio .thumbnail.muncul{
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.pKiri, .pKanan{
+	opacity: 0;
+	transform: translate(-50px, 0) rotate(15deg);
+	transition: 1s;
+}
+
+.pKanan{
+	transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul{
+	opacity: 1;
+	transform: translate(0,0);
+}
